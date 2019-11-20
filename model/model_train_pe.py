@@ -21,7 +21,7 @@ import pandas as pd
 
 data = pd.read_csv('../data/csv/pe_train.csv')
 
-x_data = data.drop(['filename', 'md5', 'CheckSum', 'CreationYear', 'class'], axis = 1)
+x_data = data.drop(['filename', 'class'], axis = 1)
 y_data = data['class']
 
 x_data.shape
